@@ -9,15 +9,15 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class RegistrationManager{
-   private Set<Person> participants;
+   private Set<Person> persons;
    
    @OneToMany(cascade={CascadeType.ALL})
-   public Set<Person> getParticipants() {
-      return this.participants;
+   public Set<Person> getPersons() {
+      return this.persons;
    }
    
-   public void setParticipants(Set<Person> participantss) {
-      this.participants = participantss;
+   public void setPersons(Set<Person> persons) {
+      this.persons = persons;
    }
    
    private Integer id;
